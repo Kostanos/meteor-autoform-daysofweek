@@ -12,14 +12,14 @@ AutoForm.addInputType("bootstrap-daysofweek", {
   },
   contextAdjust: function (context) {
     var itemAtts = _.omit(context.atts);
-    var days = ['0', '1', '2', '3', '4', '5', '6'];
+    var days = ['1', '2', '3', '4', '5', '6', '7'];
     // build items list
     context.items = [];
 
     _.each(days, function(dayNum) {
       context.items.push({
         name: context.name,
-        label: moment().weekday(dayNum).format('dd'),
+        label: moment().isoWeekday(dayNum).format('dd'),
         value: dayNum,
         // _id must be included because it is a special property that
         // #each uses to track unique list items when adding and removing them
