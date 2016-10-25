@@ -12,7 +12,7 @@ AutoForm.addInputType("bootstrap-daysofweek", {
   },
   contextAdjust: function (context) {
     var itemAtts = _.omit(context.atts);
-    var days = ['1', '2', '3', '4', '5', '6', '7'];
+    var days = [1, 2, 3, 4, 5, 6, 7];
     // build items list
     context.items = [];
 

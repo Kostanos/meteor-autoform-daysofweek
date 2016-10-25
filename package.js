@@ -1,7 +1,7 @@
 Package.describe({
   name: 'kostanos:autoform-daysofweek',
   summary: 'Days of week multiple selector',
-  version: '1.0.1',
+  version: '1.0.2',
   git: 'https://github.com/Kostanos/meteor-autoform-daysofweek.git'
 });
 
