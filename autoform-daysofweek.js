@@ -25,7 +25,7 @@ AutoForm.addInputType("bootstrap-daysofweek", {
         // #each uses to track unique list items when adding and removing them
         // See https://github.com/meteor/meteor/issues/2174
         _id: dayNum,
-        selected: (_.contains(context.value, dayNum)),
+        selected: (_.contains(_.map(context.value, function(v){return parseInt(v);}), dayNum)), // convert string to number
         atts: itemAtts
       });
     });
